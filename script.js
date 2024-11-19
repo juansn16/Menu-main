@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.querySelector('#carouselExampleControls');
+    const animatedTexts = document.querySelectorAll('.animated-text');
+
+    carousel.addEventListener('slide.bs.carousel', () => {
+        animatedTexts.forEach(text => {
+            text.style.animation = 'none'; 
+            setTimeout(() => {
+                text.style.animation = ''; 
+            }, 10); 
+        });
+    });
+});
+
+
 // Definir productos del menú
 const productos = {
     "Hamburguesas Clasica": 5,
