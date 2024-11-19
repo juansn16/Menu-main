@@ -115,7 +115,7 @@ function limpiarFactura() {
     document.getElementById("Efectivo").checked = false;
     document.getElementById("Tarjeta").checked = false;
     actualizarFactura(); // Limpiar la tabla en el HTML
-
+    //mas comentarios
     // Limpiar el contenido del modal
     const modalBodyContent = document.getElementById("modal-body-content");
     const modalTotal = document.getElementById("modal-total");
